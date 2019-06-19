@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<GridPane alignment="center" hgap="10" maxHeight="300.0" maxWidth="400.0" minHeight="300.0" minWidth="400.0" pickOnBounds="false" prefHeight="300.0" prefWidth="400.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane fx:id="myAnchorPane" maxHeight="300.0" maxWidth="400.0" minHeight="300.0" minWidth="400.0" pickOnBounds="false" prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: linear-gradient(black, gray);" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="48.0" layoutY="45.0" onMouseClicked="#handleImageClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cookie.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="cookiesLabel" alignment="CENTER" layoutX="14.0" layoutY="195.0" prefHeight="65.0" prefWidth="126.0" text="Cookies: 0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="infoButton" layoutX="225.0" layoutY="260.0" mnemonicParsing="false" onAction="#newWindowInfo" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: black; -fx-border-color: white;" text="INFO" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="cursorButton" layoutX="225.0" layoutY="150.0" mnemonicParsing="false" onAction="#buyCursor" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: black; -fx-border-color: white;" text="Buy cursor" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="clickerButton" layoutX="225.0" layoutY="182.0" mnemonicParsing="false" onAction="#buyClicker" prefHeight="27.0" prefWidth="84.0" style="-fx-background-color: black; -fx-border-color: white;" text="Buy clicker" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="bakerButton" layoutX="225.0" layoutY="214.0" mnemonicParsing="false" onAction="#hireBaker" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: black; -fx-border-color: white;" text="Hire baker" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Label fx:id="cursorsLabel" layoutX="225.0" layoutY="26.0" prefHeight="38.0" prefWidth="106.0" text="Cursors: 1" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="clickersLabel" layoutX="225.0" layoutY="64.0" prefHeight="38.0" prefWidth="106.0" text="Clickers: 0" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="bakersLabel" layoutX="225.0" layoutY="101.0" prefHeight="38.0" prefWidth="106.0" text="Bakers: 0" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="exitButton" layoutX="360.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeApp" style="-fx-background-color: black; -fx-border-color: white;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="priceTopicTag" alignment="CENTER" layoutX="329.0" layoutY="120.0" prefHeight="27.0" prefWidth="48.0" style="-fx-border-color: white; -fx-border-radius: 5px;" text="Price:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="cursorPriceLabel" layoutX="319.0" layoutY="152.0" style="-fx-border-color: black; -fx-border-radius: 2px; -fx-border-width: 2px; -fx-background-color: linear-gradient(gray, black);" text="10" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="clickerPriceLabel" layoutX="319.0" layoutY="184.0" style="-fx-border-color: black; -fx-border-radius: 2px; -fx-border-width: 2px; -fx-background-color: linear-gradient(gray, black);" text="50" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="bakerPriceLabel" layoutX="319.0" layoutY="216.0" style="-fx-border-color: black; -fx-border-radius: 2px; -fx-border-width: 2px; -fx-background-color: linear-gradient(gray, black);" text="200" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</GridPane>

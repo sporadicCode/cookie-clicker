@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="160.0" maxWidth="200.0" minHeight="160.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Info">
+   <children>
+      <Label alignment="CENTER" layoutX="22.0" layoutY="30.0" prefHeight="34.0" prefWidth="157.0" text="Author: Pavel T." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="22.0" layoutY="64.0" prefHeight="34.0" prefWidth="157.0" text="Updated on: 19.06.19" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="22.0" layoutY="98.0" prefHeight="34.0" prefWidth="157.0" text="Version: 1.02" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
